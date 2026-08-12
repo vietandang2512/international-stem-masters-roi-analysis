@@ -1,0 +1,13 @@
+country,occupation,gross_salary_usd,effective_tax_rate,net_salary_usd,source_year
+United States,data analyst,68360,0.171,56670,2025
+United States,data scientist,85660,0.197,68785,2025
+Canada,data analyst,52000,0.172,43056,2023-2024
+Canada,data scientist,62400,0.185,50856,2023-2024
+United Kingdom,data analyst,38580,0.157,32523,2025
+United Kingdom,data scientist,54900,0.194,44249,2025
+Australia,data analyst,57243,0.2063,45435,2026
+Australia,data scientist,62896,0.2165,49280,2026
+Germany,data analyst,65610,0.368,41467,2025
+Germany,data scientist,75060,0.383,46310,2025
+Netherlands,data analyst,51998,0.179,42690,2025
+Netherlands,data scientist,65864,0.236,50320,2025

@@ -1,0 +1,61 @@
+country,program,university,city,total_tuition_usd,duration_months,total_living_cost_usd,total_direct_cost_usd,source_year
+United States,Business Analytics,MIT,Cambridge,96884,12,54120,151004,2026–27
+United States,Statistics & Data Science,Stanford University,Stanford,70900,18,90027,160927,2026–27
+United States,Data Science,Harvard University,Cambridge,101256,16,63245,164501,2026–27
+United States,Data Science,University of Pennsylvania,Philadelphia,88250,21,63534,151784,2026–27
+United States,Data Science & Applied Statistics,Cornell University,Ithaca,73946,12,39829,113775,2026–27
+United States,Statistics & Data Science,Yale University,New Haven,78600,16,58025,136625,2026–27
+United States,Data Science,Johns Hopkins University,Baltimore,103005,16,49061,152066,2026–27
+United States,Statistics & Data Science,"University of California, Berkeley",Berkeley,55285,10,38472,93757,2026–27
+United States,Applied Data Science,University of Chicago,Chicago,76608,12,46297,122905,2025–26 tuition; 2026–27 fees/living
+United States,Data Science,Columbia University,New York City,84660,16,50037,134697,2026–27
+United Kingdom,MSc Statistics (Data Science and Machine Learning),Imperial College London,London,53134,12,29446,82580,2026 entry; living Current page; accessed 2026-07-28
+United Kingdom,MSc in Statistical Science,University of Oxford,Oxford,58234,12,29078,87312,2026/27
+United Kingdom,MPhil in Data Intensive Science,University of Cambridge,Cambridge,52383,10,22900,75283,2026/27
+United Kingdom,Data Science MSc,UCL,London,62189,12,27667,89856,2026/27
+United Kingdom,Data Science MSc,University of Edinburgh,Edinburgh,54465,12,25675,80140,2026/27
+United Kingdom,Data Science MSc,King's College London,London,53866,12,29318,83184,2026/27
+United Kingdom,MSc Data Science (Computer Science Data Informatics),University of Manchester,Manchester,46875,12,25254,72129,2026 entry; living 2026/27
+United Kingdom,MSc Data Science,University of Bristol,Bristol,48606,12,30788,79394,2026/27; living 2025/26 student survey
+United Kingdom,MSc Data Science,London School of Economics and Political Science (LSE),London,53134,12,25802,78936,2026/27; living Current guide; accessed 2026-07-28
+United Kingdom,Statistics with Data Science MSc,University of Warwick,Coventry,49884,12,19187,69071,2026/27; living Page updated 2025-10-16
+Canada,Master of Management in Analytics,McGill University,Montreal,58254,12,14978,73232,2026–27
+Canada,MSc in Applied Computing — Data Science,University of Toronto,Toronto,63897,16,27908,91805,2026-09-01 00:00:00
+Canada,Master of Data Science — Vancouver,University of British Columbia,Vancouver,42410,10,22067,64477,2026–27; living base 2020
+Canada,Master of Management Analytics,University of Alberta,Edmonton,42574,12,18558,61132,2025–26
+Canada,Master of Data Science and Artificial Intelligence — Co-op,University of Waterloo,Waterloo,40054,16,30977,71031,2026–27
+Canada,Master of Data Analytics,Western University,London,43300,12,24644,67943,2026–27
+Canada,"MSc Computer Science — Machine Learning, internship option",Université de Montréal,Montreal,24840,24,29513,54352,2026–27 tuition; 2025–26 insurance
+Canada,Master of Management in AI and Analytics,McMaster University,Hamilton,46122,16,29200,75323,2026–27 living; 2027 intake tuition
+Canada,Full-time Master of Management Analytics,Queen’s University,Toronto,59338,16,27908,87246,2026–27
+Canada,Master of Digital Transformation and Innovation — Applied Data Science,University of Ottawa,Ottawa,27859,24,30358,58217,2026–27
+Australia,Master of Data Science and Decisions,UNSW Sydney,Sydney,88195,24,56379,144573,2026
+Australia,Master of Data Science,University of Melbourne,Melbourne,85232,24,57490,142722,2026 tuition; 2025 living
+Australia,Master of Data Science,University of Sydney,Sydney,63836,18,57491,121327,2027 tuition; current living
+Australia,Master of Statistics,Australian National University,Canberra,78563,24,51891,130454,2026
+Australia,Master of Data Science,Monash University,Melbourne,77975,24,53990,131966,2027 tuition; current living
+Australia,Master of Data Science,University of Queensland,Brisbane,85328,24,44363,129691,2027 tuition; current living
+Australia,Master of Data Science,University of Western Australia,Perth,64956,24,72469,137425,2024 tuition; 2026–27 living
+Australia,Master of Data Science,Adelaide University,Adelaide,76855,24,39711,116567,2026
+Australia,Master of Data Science and Innovation,University of Technology Sydney,Sydney,70648,24,48214,118862,2026
+Australia,Master of Data Science,RMIT University,Melbourne,65852,24,53503,119355,2027 tuition; 2026 living
+Germany,M.Sc. Data Engineering and Analytics,Technical University of Munich,Garching,27334,24,35534,62867,2026–27; living 2024
+Germany,M.Sc. Statistics and Data Science,LMU Munich,Munich,0,24,41000,41000,2026–27
+Germany,M.Sc. Data and Computer Science,Heidelberg University,Heidelberg,6833,24,27334,34167,2026–27
+Germany,M.Sc. Data Science,Freie Universität Berlin,Berlin,0,24,27115,27115,2026–27
+Germany,M.Sc. Data Science,RWTH Aachen University,Aachen,0,24,30067,30067,2026–27
+Germany,M.Sc. Computational and Data Science,Karlsruhe Institute of Technology,Karlsruhe,6833,24,23234,30067,2026–27
+Germany,M.Sc. Statistics,Humboldt-Universität zu Berlin / BUA joint degree,Berlin,0,24,27115,27115,2026–27
+Germany,M.Sc. Computational Modeling and Simulation,TU Dresden,Dresden,0,24,28700,28700,2026–27
+Germany,M.Sc. Data Science and Artificial Intelligence,University of Hamburg,Hamburg,0,24,35397,35397,2026
+Germany,M.Sc. Data Science,FAU Erlangen–Nürnberg,Erlangen,0,24,26514,26514,2026–27; living survey 2021
+Netherlands,MSc Data Science and Artificial Intelligence Technology,Delft University of Technology,Delft,58387,24,33971,92358,2026–27
+Netherlands,MSc Data Science and Business Analytics,University of Amsterdam,Amsterdam,22664,12,16913,39577,2026–27
+Netherlands,MSc Applied Data Science,Utrecht University,Utrecht,28821,12,16400,45221,2026–27
+Netherlands,MSc Statistics & Data Science,Leiden University,Leiden,51251,24,39060,90310,2026–27
+Netherlands,MSc Business Analytics & Management,Erasmus University Rotterdam,Rotterdam,29384,12,19134,48517,2026–27
+Netherlands,MSc Data Science and Artificial Intelligence,Eindhoven University of Technology,Eindhoven,50225,24,25056,75281,2026–28
+Netherlands,MSc Data Science for Food and Health,Wageningen University & Research,Wageningen,50567,24,34017,84584,2026–28
+Netherlands,MSc Computing Science — Data Science and Systems Complexity,University of Groningen,Groningen,56717,24,24600,81317,2026–27
+Netherlands,MSc Business Analytics,Vrije Universiteit Amsterdam,Amsterdam,55009,24,47560,102569,2026–27
+Netherlands,MSc Applied Mathematics — Mathematics of Data Science & AI,University of Twente,Enschede,49428,24,35834,85263,2026–27
