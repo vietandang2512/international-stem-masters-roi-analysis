@@ -135,8 +135,6 @@ Built in Databricks AI/BI Dashboards on top of the `roi_summary` view.
 
 ![Program consistency, spread within each country](images/program_consistency.png)
 
-The dashboard lives in Databricks and runs against live tables, not a static export. If you want a public shareable link rather than just these screenshots, check the "Share" option in the dashboard's Databricks page, some workspace tiers support publishing a read-only public view. Add that link here once you have it.
-
 ---
 
 ## Repository structure
