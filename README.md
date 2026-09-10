@@ -23,18 +23,10 @@ occupations, using each country's own labor-market and tuition data.
 - Countries: United States, Canada, United Kingdom, Australia, Germany,
   Netherlands
 - Occupations: Data Analyst, Data Scientist
-- Programs sampled: 10 per country (60 total). These are popular,
-  standard choices open to international students, not only top-ranked
-  universities.
+- Programs sampled: 10 per country (60 total). These are top-ranked choices in each country that is open to international students, based on QS University ranking.
 - Financial ROI only. Quality of life and other subjective factors were
-  left out to keep the analysis defensible and small enough to finish as
+  left out, as they are not able to be converted into hard data, and to keep the analysis defensible and small enough to finish as
   a first portfolio project.
-
-BI Analyst was considered as a third occupation and dropped: distinct
-wage data isn't available for all six countries. Keeping it would have
-meant either duplicating the Data Scientist numbers under a new label or
-mixing government and non-government sources inconsistently across
-occupations.
 
 ---
 
@@ -51,7 +43,7 @@ country cost far more than the rest and would drag an average upward.
 
 Entry-level salary is defined per country, using whichever concept that
 country's own labor data actually supports, rather than forcing a single
-definition like "25th percentile" onto countries that don't publish it:
+definition onto countries that don't publish it:
 
 | Country | Entry-level definition | Source |
 |---|---|---|
@@ -97,9 +89,8 @@ dropped when the data proved impossible to source consistently. The U.S.
 has no government study of international-student outcomes comparable to
 Canada's StatCan National Graduates Survey, and the available figures
 mixed incompatible populations (international vs. domestic, STEM vs. all
-fields). Forcing those numbers in would have been worse than documenting
-the gap. Payback and ROI figures therefore assume continuous employment
-in the target occupation from graduation onward.
+fields). Payback and ROI figures therefore assume continuous employment
+in the target occupation from graduation onward, so results from this study are to be interpreted without consideration of employment rate.
 
 ---
 
@@ -122,7 +113,7 @@ typically by 3-6 months of payback and 100-200 percentage points of
 10-year ROI.
 
 Germany's lead comes from tuition policy, not pay. Its entry-level
-salaries sit mid-pack; the free-tuition policy at several public
+salaries sit mid-pack, while the free-tuition policy at several public
 universities produces the result.
 
 Program choice swings the answer far more in some countries than others.
@@ -216,6 +207,16 @@ the source data recalculates everything downstream.
 **Dashboard.** Built in Databricks AI/BI Dashboards on the `roi_summary`
 view: payback comparison, investment-vs-salary scatter, and program
 spread charts.
+
+**Challenges Encountered.**
+- Occupation classification wasn't consistent across countries. The US has no BLS code for "Data Analyst" at all (used Operations Research Analysts as a proxy), and BLS lumps BI Analyst under Data Scientist. The UK required resolving ambiguity across several candidate SOC codes. Germany's occupational categories didn't map cleanly to job titles either.
+- Caught myself pulling numbers from secondary sources (aggregator sites, job boards, calculators) rather than primary government data more than once. One BLS figure ($85,720 vs the correct $85,660) traced back to a paraphrasing aggregator, and a UK source citation pointed to a relay site instead of gov.uk directly. Fixing this meant repeatedly cross-checking against official pages, often via screenshots since some government wage tools are JavaScript-rendered and couldn't be fetched directly.
+- Wage data was suppressed or missing in places. Australia's government data (ABS/Jobs and Skills Australia) was suppressed for these specific occupations due to small sample size, and the agency was mid-transition to a new classification system with incomplete data. The Netherlands had no occupation-level government wage tool at all, since CBS only publishes by sector. Both required falling back to private sources, flagged clearly as a limitation.
+- A real data error slipped through at first. The initial Australia pass used SEEK Grad, which reported the same salary range for Data Analyst and Data Scientist. This got caught later by questioning why the dashboard showed identical bars for both roles. Re-researching found genuinely different numbers, but from two separate private sources, since even the second round of sources disagreed wildly with each other (AUD $57k to $140k for the same role).
+- Tax calculations varied a lot in complexity by country. The US and UK have straightforward brackets. Germany uses a continuous progressive formula instead of simple brackets, and exact 2025 coefficients couldn't be confirmed from a primary source, so rates were anchored to verified net-salary calculator outputs instead. The Netherlands had two calculators giving conflicting effective rates for the same income, which meant making a judgment call on which was more mechanically sound.
+- "Entry-level" meant something different in every country's data. 25th percentile (US), "Low" wage with no clean percentile (Canada), "new entrant" rate (UK, actually a cleaner definition than a percentile), lower quartile (Germany), junior/0-2yr banding (Netherlands). This meant documenting a different definition per country instead of forcing one method everywhere.
+- Tooling caused some friction. Tried connecting a Databricks MCP connector directly but hit a persistent "Server URL doesn't match expected format" error that never got resolved. Ended up writing and testing SQL locally (using SQLite as a stand-in) before handing off scripts to run manually in the Databricks SQL editor instead.
+- Some early dashboard charts needed rework. A Payback vs ROI scatter plot turned out to be redundant, since ROI% is mathematically derived from payback period and isn't new information. Replaced it with an investment vs salary scatter to show something genuinely independent. A stacked bar chart also got flagged as misleading, since the top segment's value isn't directly readable, and got switched to grouped bars instead.
 
 ---
 
