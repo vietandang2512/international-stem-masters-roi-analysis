@@ -163,9 +163,3 @@ Built in Databricks AI/BI Dashboards on top of the `roi_summary` view.
 **SQL / Databricks version:** upload `data/tuition_data.csv` and `data/salary_data.csv` as tables named `tuition_data` and `salary_data` in a Databricks workspace (Catalog, Create table, Upload file). Run the scripts in order: `01_create_and_validate_staging.sql`, then `02_roi_calculations.sql`, then `03_summary_median_iqr.sql`, then `04_rankings_window_functions.sql`. Files 03 and 04 create the views (`roi_calculations`, `roi_summary`) the dashboard is built on.
 
 **Dashboard:** built in Databricks AI/BI Dashboards on top of the `roi_summary` view. Payback comparison, investment-vs-salary scatter, and program-consistency (spread) charts.
-
----
-
-## License
-
-MIT, see [LICENSE](LICENSE) for the full text. Reuse the methodology or code freely. The underlying salary and tuition figures reflect 2025-2026 sourcing and should be re-verified before anyone uses them for a real decision.
